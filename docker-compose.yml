@@ -21,7 +21,7 @@ services:
       - crlibrenet
     volumes:
       - ./www/settings.php:/var/www/html/settings.php
-      - ./api:/var/www/html/api
+      - ./api:/var/www/api
   mariadb:
     image: mariadb:10.11.4
     container_name: ${MARIADB_CONTAINER_NAME:-crlibre-mariadb}
