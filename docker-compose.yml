@@ -14,6 +14,7 @@ services:
       DB_NAME: ${DB_NAME:-testdb}
       DB_USERNAME: ${DB_USERNAME:-testuser}
       DB_PASSWORD: ${DB_PASSWORD:-testpassword}
+      core_install: ${core_install:-/var/www/api/}
     depends_on:
       - "mariadb"
     networks:
