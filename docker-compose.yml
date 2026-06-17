@@ -20,11 +20,6 @@ services:
       cryptoKey: ${cryptoKey:-}
       boot_alert: ${boot_alert:-false}
       log_errors: ${log_errors:-false}
-      # Variables que usa docker-entrypoint.sh (flujo alterno)
-      CRLIBRE_API_HACIENDA_DB_HOST: ${CRLIBRE_API_HACIENDA_DB_HOST:-mariadb}
-      CRLIBRE_API_HACIENDA_DB_NAME: ${DB_NAME:-testdb}
-      CRLIBRE_API_HACIENDA_DB_USER: ${DB_USER:-testuser}
-      CRLIBRE_API_HACIENDA_DB_PASSWORD: ${DB_PASSWORD:-testpassword}
     depends_on:
       - "mariadb"
     networks:
